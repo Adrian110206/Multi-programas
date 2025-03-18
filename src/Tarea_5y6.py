@@ -4,7 +4,7 @@ def citas():
     print(f'{cita} -{autor}')
     op=input("desea modificar lso espacios del autor?. eliminar los esapcios del final(1), inicio (2), ambos(3), o no(4)")
     while True:
-        if op.isdecimal()==True and int(op)>0:
+        if op.isnumeric()==True and int(op)>0:
             opc=int(op)
             if opc==1:
                 print(f"{cita} -{autor.rstrip()}")

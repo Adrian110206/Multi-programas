@@ -1,7 +1,7 @@
 def fibunacci():
     while True:
         limit = input("Ingresa un número límite para la serie de Fibonacci: ")
-        if limit.isdecimal()==True and int(limit) >0:
+        if limit.isnumeric()==True and int(limit) >0:
             limite=int(limit)
             print("continua")
             break

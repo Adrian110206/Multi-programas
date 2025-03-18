@@ -1,7 +1,7 @@
 def num_primo():
     while True:
         num=input("dame el numero que deseas verificar si es primo o no es primo:")
-        if num.isdecimal()==True and int(num)>0:
+        if num.isnumeric()==True and int(num)>0:
             n=int(num)
             if n > 1:
                 for i in range(2, n):

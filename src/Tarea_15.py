@@ -5,12 +5,12 @@ def par_impar():
     print("Ingresa números impares:")
     while True:
         entrada = input("Número impar: ")
-        if entrada.isdecimal()==True and int(entrada)>0:
+        if entrada.isnumeric()==True and int(entrada)>0:
                 numero = int(entrada)
                 if numero % 2 == 1:
                     impares.append(numero)
                     op=input("¿Deseas salir? salir (S) continuar(N):\n")
-                    if op.isdecimal()==True and int(op)>0:
+                    if op.isnumeric()==True and int(op)>0:
                         p=int(op)
                     if p=="S":
                         break
@@ -19,7 +19,7 @@ def par_impar():
                 else:
                     print("Ese número no es impar. Intenta de nuevo.")
                     op=input("¿Deseas salir? salir (S) continuar(N):\n")
-                    if op.isdecimal()==True and int(op)>0:
+                    if op.isnumeric()==True and int(op)>0:
                         p=int(op)
                         if p=="S":
                             break
